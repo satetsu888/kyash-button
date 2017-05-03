@@ -1,0 +1,48 @@
+.kyash-button {
+    position:relative;
+
+    height: 20px;
+    box-sizing: border-box;
+    padding: 3px 8px;
+    background-color: #1ba9e1;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.kyash-button:hover {
+    background-color: #1589b7;
+}
+.kyash-button.active {
+    background-color: #1589b7;
+}
+
+.kyash-button-tooltips {
+    display: none;
+    position: absolute;
+    left: 0.3em;
+    top: 2.4em;
+    z-index: 9999;
+    padding: 0.3em 0.5em;
+    color: #FFFFFF;
+    background: #1ba9e1;
+    border-radius: 0.5em;
+}
+.kyash-button-tooltips img{
+    border-radius: 0.5em;
+}
+.kyash-button-tooltips:after {
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0.5em;
+    top: -8px;
+    border-top:8px solid transparent;
+    border-left:8px solid #1ba9e1;
+}
+.kyash-button.active .kyash-button-tooltips {
+    display: block;
+}

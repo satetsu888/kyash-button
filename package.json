@@ -1,0 +1,14 @@
+{
+  "name": "kyash-button",
+  "version": "0.0.1",
+  "description": "The button behave as link to Kyash app in iOS or display QRCode of Kyash in other environments.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "satetsu888",
+  "license": "MIT",
+  "dependencies": {
+    "ua-parser-js": "^0.7.12"
+  }
+}

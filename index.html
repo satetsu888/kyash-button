@@ -1,0 +1,20 @@
+<script>
+window.kyash = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+  t = window.kyash || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "./dest/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+  return t;
+}(document, "script", "kyash-wjs"));
+</script>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+<a class="kyash-button" data-user-id="7181880057281420395">Kyash</a>
