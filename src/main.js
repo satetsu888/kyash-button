@@ -1,6 +1,6 @@
 var parser = require('ua-parser-js');
 
-const host = "."; // TODO
+const host = "https://satetsu888.github.io/kyash-button";
 const baseUrl = "kyash://qr/u/";
 const chartAPIBaseUrl = "http://chart.apis.google.com/chart?cht=qr&chs=200x200&chld=Q|2&chl=";
 
