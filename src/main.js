@@ -61,7 +61,6 @@ function makeAsQRTip(element, index, elements) {
 function main() {
   loadCss();
   var elements = getElements();
-  console.debug(elements);
 
   var ua = parser(window.navigator.userAgent);
   if (ua.os.name === "iOS"){
