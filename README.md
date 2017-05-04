@@ -2,4 +2,4 @@
 
 ## How to use
 
-<https://satetsu888.github.io/kyash-button/index.html>
+<https://satetsu888.github.io/kyash-button/>
