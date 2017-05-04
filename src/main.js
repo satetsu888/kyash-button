@@ -49,6 +49,11 @@ function makeAsQRTip(element, index, elements) {
   var qrcode = document.createElement('img');
   qrcode.setAttribute('src', chartAPIBaseUrl + baseUrl + userId);
   tooltip.appendChild(qrcode);
+  var a = document.createElement('a');
+  a.setAttribute('href', 'https://kyash.co/');
+  a.setAttribute('target', '_blank');
+  a.innerText = "Kyashとは？";
+  tooltip.appendChild(a);
   element.appendChild(tooltip);
   element.addEventListener('click', toggle);
 }
