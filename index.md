@@ -33,7 +33,7 @@ iOSでサイトを表示した時には、直接Kyashアプリへと画面遷移
 
 ## 設置手順
 
-1. KyashのあなたのアカウントのIDを取得するために、KyashのあなたのQRコードを表示し、スクリーンショットを撮るなどして一般的なQRコードで内容を読み取ってください。内容は "kyash://qr/u/XXXXXXXXXXXXXXXXXXX"のようになっているはずですので、XXX の部分にある数字をメモしてください。
+1. KyashのあなたのアカウントのIDを取得するために、KyashでQRコードを表示し一般的なQRコードリーダーで内容を読み取ってください。内容は "kyash://qr/u/XXXXXXXXXXXXXXXXXXX"のようのようになっているはずですので、XXX の部分にある数字をメモしてください。
 1.  Kyash-buttonを表示したいページのheadタグ内に下記のタグを設置してください。
     <pre>&lt;script&gt; window.kyash = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0],t = window.kyash || {};if (d.getElementById(id)) return t;
 js = d.createElement(s);js.id = id; js.src = "https://satetsu888.github.io/kyash-button/dest/widgets.js";
