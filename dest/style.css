@@ -32,6 +32,7 @@
 }
 .kyash-button-tooltips img{
     border-radius: 0.5em;
+    max-width: none;
 }
 .kyash-button-tooltips a{
     color: #fff;

@@ -2,7 +2,7 @@ var parser = require('ua-parser-js');
 
 const host = "https://satetsu888.github.io/kyash-button";
 const baseUrl = "kyash://qr/u/";
-const chartAPIBaseUrl = "http://chart.apis.google.com/chart?cht=qr&chs=200x200&chld=Q|2&chl=";
+const chartAPIBaseUrl = "https://chart.apis.google.com/chart?cht=qr&chs=200x200&chld=Q|2&chl=";
 
 function getElements() {
   return document.querySelectorAll('a.kyash-button');
@@ -17,13 +17,7 @@ function loadCss() {
 }
 
 function toggle(e) {
-  var element = e.target;
-  while(true) {
-    if(element.classList.contains('kyash-button')) {
-      break;
-    }
-    element = element.parentElement;
-  }
+  var element = e.currentTarget;
 
   if (element.classList.contains('active')) {
     element.classList.remove('active');
@@ -32,17 +26,17 @@ function toggle(e) {
   }
 }
 
-function makeAsLink(element, index, elements) {
-  if(!"userId" in element.dataset){ return; }
+function makeAsLink(element) {
+  if(!element.getAttribute('data-user-id')){ return; }
 
-  const userId = element.dataset.userId;
+  const userId = element.getAttribute('data-user-id');
   element.setAttribute('href', baseUrl + userId);
 }
 
-function makeAsQRTip(element, index, elements) {
-  if(!"userId" in element.dataset){ return; }
+function makeAsQRTip(element) {
+  if(!element.getAttribute('data-user-id')){ return; }
 
-  const userId = element.dataset.userId;
+  const userId = element.getAttribute('data-user-id');
 
   var tooltip = document.createElement('div');
   tooltip.setAttribute('class', 'kyash-button-tooltips');
@@ -63,10 +57,12 @@ function main() {
   var elements = getElements();
 
   var ua = parser(window.navigator.userAgent);
-  if (ua.os.name === "iOS"){
-    elements.forEach(makeAsLink)
-  } else {
-    elements.forEach(makeAsQRTip)
+  for(var i=0; i<elements.length; i++){
+    if (ua.os.name === "iOS"){
+      makeAsLink(elements[i]);
+    } else {
+      makeAsQRTip(elements[i]);
+    }
   }
 };
 
