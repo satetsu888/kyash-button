@@ -52,4 +52,4 @@ fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.pu
 
 ## おまけ
 
-Kyash-buttonをWebサイトに設置した際は、<a href="https://twitter.com/search?f=tweets&q=%23kyash-button" target="_blank">#kyash-button</a>のハッシュタグをつけて設置したサイトのURLをTwitterに投稿してもらうと、僕が見つけ次第ボタンを使って送金します。
+Kyash-buttonをWebサイトに設置した際は、<a href="https://twitter.com/search?f=tweets&q=%23kyash_button" target="_blank">#kyash_button</a>のハッシュタグをつけて設置したサイトのURLをTwitterに投稿してもらうと、僕が見つけ次第ボタンを使って送金します。
