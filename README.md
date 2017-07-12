@@ -2,7 +2,7 @@
 
 ## Demo
 
-### iOS
+### スマートフォン
 ![](https://raw.githubusercontent.com/satetsu888/kyash-button/images/kyash-button-demo-ios.gif)
 
 
