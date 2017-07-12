@@ -60,6 +60,8 @@ function main() {
   for(var i=0; i<elements.length; i++){
     if (ua.os.name === "iOS"){
       makeAsLink(elements[i]);
+    } else if(ua.os.name === "Android"){
+      makeAsLink(elements[i]);
     } else {
       makeAsQRTip(elements[i]);
     }
