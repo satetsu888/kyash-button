@@ -33,13 +33,18 @@ Kyash-buttonはWebサイトのオーナーに<a href="https://kyash.co/" target=
 
 ## 設置手順
 
-1. KyashのあなたのアカウントのIDを取得するために、KyashでQRコードを表示し一般的なQRコードリーダーで内容を読み取ってください。内容は "kyash://qr/u/XXXXXXXXXXXXXXXXXXX"のようのようになっているはずですので、XXX の部分にある数字をメモしてください。
-1.  Kyash-buttonを表示したいページのheadタグ内に下記のタグを設置してください。
-    <pre>&lt;script&gt; window.kyash = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0],t = window.kyash || {};if (d.getElementById(id)) return t;
+1. KyashのあなたのアカウントのIDを取得するために、KyashでQRコードを表示し一般的なQRコードリーダーで内容を読み取ってください。内容は `"kyash://qr/u/XXXXXXXXXXXXXXXXXXX"`のようのようになっているはずですので、XXX の部分にある数字をメモしてください。
+1. Kyash-buttonを表示したいページのheadタグ内に下記のタグを設置してください。
+```
+ <script>window.kyash = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0],t = window.kyash || {};if (d.getElementById(id)) return t;
 js = d.createElement(s);js.id = id; js.src = "https://satetsu888.github.io/kyash-button/dest/widgets.js";
-fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, "script", "kyash-wjs"));&lt;/script&gt;</pre>
+fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, "script", "kyash-wjs"));</script>
+```
+
 1. Kyash-buttonを表示したい場所に下記のタグを設置してください。data-user-idには先ほどメモしたあなたのKyashアカウントのIDを入力してください。
-    <pre>&lt;a class="kyash-button" data-user-id="7181880057281420395"&gt;Kyash&lt;/a&gt;</pre>
+    ```
+    <a class="kyash-button" data-user-id="7181880057281420395">Kyash</a>
+    ```
 
 ## 利用上の注意
 
